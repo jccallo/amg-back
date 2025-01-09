@@ -13,7 +13,7 @@ class SpInsertTransaction extends Migration
     public function up()
     {
         $procedure = 'CREATE PROCEDURE sp_insert_transaction(
-            IN p_amount DECIMAL(8, 2),  -- Parámetro de entrada para el monto
+            IN p_amount DECIMAL(10, 2),  -- Parámetro de entrada para el monto
             IN p_date DATE,              -- Parámetro de entrada para la fecha
             IN p_client_id INT           -- Parámetro de entrada para el ID del cliente
         )
